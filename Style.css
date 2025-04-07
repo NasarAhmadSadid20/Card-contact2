@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: dana;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    border: 1px solid rgb(38, 28, 28);
+    display: flex;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(8, 58, 167);
+    border-radius: 25% 0px 0 25%;
+}
+
+.right h1 {
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.right p {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+
+
+/*  left */
+
+
+
+.div {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.link1 {
+    font-size: 1.9rem;
+    color: rgb(0, 0, 0);
+    margin: 7px;
+}
+
+.link1:hover {
+    color: rgb(8, 58, 167);
+    transition: all .3s ease-in;
+}
+
+.link {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 7px;
+
+}
+
+.link:hover {
+    color: rgb(8, 58, 167);
+    transition: all .3s ease-in-out;
+}
+
+.left h1 {
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 40px
+}
+
+form {
+    margin-top: -10px;
+}
+
+input {
+    width: 220px;
+    font-family: dana;
+    display: block;
+    transform: translate(20%, 50%);
+    background-color: rgb(236, 234, 234);
+    margin: 13px 0;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    text-align: center;
+
+}
+
+.forgot {
+    width: 200px;
+    text-decoration: none;
+    color: rgb(8, 58, 167);
+    margin: auto;
+    margin-top: 30px;
+
+
+}
+.forgote:hover{
+    border-bottom: 1px solid rgb(8, 58, 167);
+    transition: .9s ease-in;
+}
+button{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(8, 58, 167);
+    margin-top: 17px;
+    margin-left: 30px;
+    border-radius: 8px;
+    font-family: dana;
+    color: #fff;
+    border: none;
+    outline: none;
+
+}
+button:hover{
+    background-color: rgb(10, 52, 143);
+}
+
+/*  Respansie */
+
+
+@media(max-width:600px){
+    .container{
+        flex-direction: column;
+        border: none;
+        height: 99vh;
+    }
+    .left{
+        width: 100%;
+        order: 2;
+        height: -900px;
+    }
+    .right{
+        width: 100%;
+        border-radius: 10px 0 10px 0;
+        text-align: center;
+    
+
+    }
+    .form{
+        margin-left: 40px;
+    }
+        
+}
+
+
+
